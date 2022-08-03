@@ -1,0 +1,22 @@
+{
+  "name": "jest-test-mutation",
+  "version": "1.0.0",
+  "description": "https://jestjs.io https://stryker-mutator.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandlazaris/jest-test-mutation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandlazaris/jest-test-mutation/issues"
+  },
+  "homepage": "https://github.com/alexandlazaris/jest-test-mutation#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
