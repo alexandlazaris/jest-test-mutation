@@ -4,7 +4,7 @@
   "description": "https://jestjs.io https://stryker-mutator.io",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest"
+    "test": "npx jest --coverage"
   },
   "repository": {
     "type": "git",
