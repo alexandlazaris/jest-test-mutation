@@ -6,4 +6,4 @@ function multiplyForceNegativeResult(a, b) {
     return (a * b) * -1
 }
 
-module.exports = multiply;
+module.exports = { multiply, multiplyForceNegativeResult};
