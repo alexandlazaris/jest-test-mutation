@@ -11,5 +11,19 @@ describe('test object validations', () => {
         key = 100;
         expect(basic.age).toEqual(key)
     });
+
+    test('the object tree should match the snapshot', () => {
+        expect(basic).toMatchSnapshot()
+    });
+
+    test('the object tree should match the inline snapshot', () => {
+        expect(basic).toMatchInlineSnapshot(`
+Object {
+  "age": 100,
+  "id": 123,
+  "name": "bob",
+}
+`)
+    });
     
 });
