@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test object validations the object tree should match the snapshot 1`] = `
+Object {
+  "age": 100,
+  "id": 123,
+  "name": "bob",
+}
+`;
