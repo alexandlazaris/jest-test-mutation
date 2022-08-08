@@ -11,25 +11,26 @@ https://stryker-mutator.io
 **Summary**: Use Stryker to identify tests that do not cover various logic or conditional mutations.
 
 ### Mutations
-**original logic**
+#### Original logic
 ```
 function sum(a, b) { return a + b)}
-// sum(2+2)
-// output: 4 
+// sum(2, 2)
 // test is expecting 4
+// result is 4 
 // PASS
 ```
 
-**mutation**
+#### Mutation
+Below, Stryker has modified the `+` operator to be `-` instead, and will check if the existing test case caters to this new scenario aka mutation.
 ```
 function sum(a, b) { return a - b)}
-// sum(2+2)
-// output: 0
+// sum(2, 2)
 // test is expecting 4
+// result is 0
 // FAIL
 ```
 
-Stryker takes your code, mutates and runs your tests against the mutated logic, returning the results of those additional tests. 
+Stryker takes your code, mutates and runs your tests against the mutated logic, returning the results of those additional scenarios against your existing unit tests. 
 
 **mutants**
 * are generated based off operators or logic provided in functions. e.g
